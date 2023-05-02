@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Italy.On</title>
+</head>
+
+<body>
+    <div class="drop">
+        <button class="drop__button">
+           <img src="./img/cros.svg" class="drop__button__img">
+        </button>
+        <button class="drop__link">Главная</button>
+        <button class="drop__link">Популярное</button>
+        <button class="drop__link">Категории</button>
+        <button class="drop__link">О нас</button>
+        <button class="drop__link">Регистрация</button>
+        <button class="drop__link">Войти</button>
+    </div>
+    <header class="header">
+        <h1 class="header__logo">
+            <span class="header__logo__special">Italy</span>.On
+        </h1>
+        <div class="header__links">
+            <a class="header__link" href="#">
+                Главная
+            </a>
+            <a class="header__link" href="#">
+                Популярное
+            </a>
+            <a class="header__link" href="#">
+                Категория
+            </a>
+            <a class="header__link" href="#">
+                О нас
+            </a>
+        </div>
+        <div class="header__buttons">
+            <button class="header__button header__login">
+                Войти
+            </button>
+            <button class="header__button header__register">
+                Регистрация
+            </button>
+        </div>
+        <button class="drop__open">
+           <img src="./img/burg.svg" class="drop__button__img">
+        </button>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <p class="hero__small">
+                Все что вам нужно - это <span class="hero__small__special">Italy.On</span>
+            </p>
+            <h1 class="hero__title">
+                Романтичная Италия
+            </h1>
+            <div class="hero__control">
+                <!-- 
+                <button class="hero__control__button hero__control__left">
+                    <img src="./img/hero/arrow.svg" alt="">
+                </button>
+                -->
+                <h2 class="hero__control__name">
+                    Гранд Канал
+                </h2>
+                <!--
+                <button class="hero__control__button hero__control__right">
+                    <img src="./img/hero/arrow.svg" alt="">
+                </button>
+                -->
+            </div>
+            <section class="search">
+                <div class="search__parameters">
+                    <div class="search__parameter">
+                        <img class="search__parameter__img" src="./img/search/map.svg" alt="">
+                        <div class="search__parameter__description">
+                            <p class="search__parameter__title">
+                                Место
+                            </p>
+                            <input class="search__parameter__input" type="text" placeholder="Желаемое место">
+                        </div>
+                    </div>
+
+                    <div class="search__parameter">
+                        <img class="search__parameter__img" src="./img/search/date.svg" alt="">
+                        <div class="search__parameter__description">
+                            <p class="search__parameter__title">
+                                Дата
+                            </p>
+                            <input class="search__parameter__input" type="text" onfocus="(this.type='date')" placeholder="Выберите дату">
+                        </div>
+                    </div>
+
+                    <div class="search__parameter">
+                        <img class="search__parameter__img" src="./img/search/man.svg" alt="">
+                        <div class="search__parameter__description">
+                            <p class="search__parameter__title">
+                                Спутники
+                            </p>
+                            <input class="search__parameter__input" type="number" placeholder="Количество людей">
+                        </div>
+                    </div>
+                </div>
+                <button class="search__button">
+                    <img class="search__button__img" src="./img/search/search.svg" alt="">
+                </button>
+            </section>
+        </section>
+
+        <section class="popular">
+            <h2 class="popular__title">
+                Популярные запросы
+            </h2>
+            <div class="popular__list">
+                <!-- Генерация через js -->
+            </div>
+        </section>
+
+        <section class="catalog">
+            <h2 class="catalog__title">
+                Категории
+            </h2>
+            <p class="catalog__text">
+                Такое количество мест может вскружить голову, но не переживайте, мы разделили их на категории
+            </p>
+            <div class="catalog__list__wrapper">
+                <div class="catalog__buttons">
+                    <button class="catalog__buttons__left">
+                        <img src="./img/hero/arrow.svg" alt="">
+                    </button>
+                    <button class="catalog__buttons__right">
+                        <img src="./img/hero/arrow.svg" alt="">
+                    </button>
+                </div>
+                <div class="catalog__list">
+                    <!-- Генерация через js -->
+                </div>
+            </div>
+        </section>
+        <section class="why">
+            <div class="why__img__wrapper">
+                <img class="why__img" src="./img/why/img.png" alt="">
+            </div>
+            <div class="why__description">
+                <h2 class="why__title">
+                    Почему <span class="why__title__special">Italy</span>.On?
+                </h2>
+                <p class="why__text">
+                     ItalyOn сотрудничает с компаниями, что предоставляют более 400 прекрасных мест для вас, чтобы
+                    расслабиться от забот повседневной жизни и насладиться вдоволь. Не волнуйтесь, вы не промахнетесь.
+                    <br><br> У ItalyOn на вооружении больше 100 профессиональных гидов, кроме того, больше 5 тыс. клиентов
+                    остались довольны нашими услугами. Так чего же вы ждете? Давайте спланируем ваш отпуск вместе с
+                    нами!
+                </p>
+
+                <img class="why__description__decor" src="./img/why/decor.svg" alt="">
+            </div>
+        </section>
+
+        <section class="best">
+            <h2 class="best__title">
+                Лучшие места для Вас
+            </h2>
+            <p class="best__text">
+                То что вам надо. Откройте для себя что-то интересное и прочувствуйте новою для себя атмосферу.
+            </p>
+            <div class="best__list">
+                <!-- Генерация через js -->
+            </div>
+        </section>
+
+        <section class="app__wrapper">
+            <div class="app">
+            <h2 class="app__title">
+                Устанавливайте приложение Italy.On
+            </h2>
+            <p class="app__text">
+                Получайте последние предложения и комфортно ищите нужное.
+            </p>
+            <div class="app__buttons">
+                <a href="#"  class="app__link">
+                    <img class="app__link__img" src="./img/app/appstore.png" alt="">
+                </a>
+                <a href="#" class="app__link">
+                    <img class="app__link__img" src="./img/app/googleplay.png" alt="">
+                </a>
+            </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__list">
+                <!-- Генерация через js -->
+            </div>
+
+            <a class="footer__author" href="">Copyright @ 2023 landerexit. All Rights Reserved.</a>
+        </footer>
+    </main>
+
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
